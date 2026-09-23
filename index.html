@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NOVA — Modern Ecommerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    Free shipping on orders over $75
+    <span>•</span>
+    Easy 30-day returns
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+
+    <a href="#" class="logo">
+      NOVA<span>.</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#shop">Shop</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="icon-btn" id="searchBtn">
+        ⌕
+      </button>
+
+      <button class="icon-btn" id="accountBtn">
+        ♙
+      </button>
+
+      <button class="icon-btn bag-btn" id="cartBtn">
+        ♧
+        <b id="cartCount">0</b>
+      </button>
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="new">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          THE AUTUMN EDIT · 2026
+        </p>
+
+        <h1>
+          Objects with
+          <br>
+          <em>intention.</em>
+        </h1>
+
+        <p class="hero-text">
+          Thoughtful essentials for everyday living —
+          designed to last, made to be lived with.
+        </p>
+
+        <a href="#shop" class="btn btn-dark">
+          Shop the collection
+          <span>→</span>
+        </a>
+
+      </div>
+
+
+      <div class="hero-art">
+
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="hero-card">
+
+          <div class="model-shape"></div>
+
+          <span>01 / 04</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Trust -->
+    <section class="trust">
+
+      <div>
+        <strong>01</strong>
+        <span>
+          Curated design
+          <br>
+          for daily life
+        </span>
+      </div>
+
+      <div>
+        <strong>02</strong>
+        <span>
+          Premium materials
+          <br>
+          without markup
+        </span>
+      </div>
+
+      <div>
+        <strong>03</strong>
+        <span>
+          30-day
+          <br>
+          easy returns
+        </span>
+      </div>
+
+      <div>
+        <strong>04</strong>
+        <span>
+          Worldwide
+          <br>
+          delivery
+        </span>
+      </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="section" id="shop">
+
+      <div class="section-head">
+
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>Made for now.</h2>
+        </div>
+
+        <div class="filters">
+
+          <button class="filter active" data-category="All">
+            All
+          </button>
+
+          <button class="filter" data-category="Home">
+            Home
+          </button>
+
+          <button class="filter" data-category="Wear">
+            Wear
+          </button>
+
+          <button class="filter" data-category="Objects">
+            Objects
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="products" id="products"></div>
+
+    </section>
+
+
+    <!-- Editorial -->
+    <section class="editorial" id="about">
+
+      <div class="editorial-img">
+        <div class="editorial-circle"></div>
+      </div>
+
+      <div class="editorial-copy">
+
+        <p class="eyebrow">
+          THE NOVA PHILOSOPHY
+        </p>
+
+        <h2>
+          Less, but
+          <br>
+          <em>better.</em>
+        </h2>
+
+        <p>
+          We believe the things around you should earn
+          their place. NOVA brings together quiet forms,
+          honest materials, and useful details to create
+          pieces you'll keep reaching for.
+        </p>
+
+        <a href="#about" class="text-link">
+          Our story
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="section categories" id="collections">
+
+      <div class="section-head">
+
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Shop by mood.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <a
+          href="#shop"
+          class="cat cat-1"
+          data-jump="Home"
+        >
+          <span>Home objects</span>
+          <b>→</b>
+        </a>
+
+        <a
+          href="#shop"
+          class="cat cat-2"
+          data-jump="Wear"
+        >
+          <span>Everyday wear</span>
+          <b>→</b>
+        </a>
+
+        <a
+          href="#shop"
+          class="cat cat-3"
+          data-jump="Objects"
+        >
+          <span>Small objects</span>
+          <b>→</b>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+      <p class="eyebrow">
+        STAY IN THE LOOP
+      </p>
+
+      <h2>
+        Good things, occasionally.
+      </h2>
+
+      <p>
+        New drops, studio notes, and 10% off your first order.
+      </p>
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          placeholder="Your email address"
+          required
+        >
+
+        <button class="btn btn-dark">
+          Subscribe
+        </button>
+
+      </form>
+
+      <small id="newsletterMsg"></small>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div>
+
+      <a href="#" class="logo">
+        NOVA<span>.</span>
+      </a>
+
+      <p>
+        Objects with intention.
+        <br>
+        © 2026 NOVA Studio.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>Shop</h4>
+
+      <a href="#shop">All products</a>
+      <a href="#new">New arrivals</a>
+      <a href="#collections">Collections</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Help</h4>
+
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Follow</h4>
+
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Journal</a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="drawer-head">
+
+      <h3>Your bag</h3>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cartItems" class="cart-items"></div>
+
+
+    <div class="cart-bottom">
+
+      <div>
+        <span>Subtotal</span>
+        <strong id="subtotal">
+          $0.00
+        </strong>
+      </div>
+
+      <button
+        class="btn btn-dark checkout"
+        id="checkoutBtn"
+      >
+        Checkout →
+      </button>
+
+      <small>
+        Taxes and shipping calculated at checkout.
+      </small>
+
+    </div>
+
+  </aside>
+
+
+  <!-- Search -->
+  <div class="search-modal" id="searchModal">
+
+    <button
+      class="close-search"
+      id="closeSearch"
+    >
+      ×
+    </button>
+
+    <p class="eyebrow">
+      SEARCH NOVA
+    </p>
+
+    <input
+      id="searchInput"
+      placeholder="Search products..."
+    >
+
+    <div id="searchResults"></div>
+
+  </div>
+
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
